@@ -6,11 +6,15 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import SplashScreen from "../screens/splash";
 import LoginScreen from "../screens/login";
 import SignupScreen from "../screens/signup";
+import AddTaskScreen from "../screens/add-task-screen";
+import TaskListScreen from "../screens/task-list";
 
 export type RootStackParamList = {
   Splash: undefined;
   Login: undefined;
   Signup: undefined;
+  TaskList: undefined;
+  AddTask: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -34,12 +38,13 @@ export default function AppNavigator() {
         initialRouteName="Splash"
         screenOptions={{
           headerShown: false,
-          animation: getRandomAnimation(),
         }}
       >
         <Stack.Screen name="Splash" component={SplashScreen} />
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Signup" component={SignupScreen} />
+        <Stack.Screen name="TaskList" component={TaskListScreen} />
+        <Stack.Screen name="AddTask" component={AddTaskScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
