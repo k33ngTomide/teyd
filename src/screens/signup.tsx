@@ -34,7 +34,13 @@ export default function SignupScreen() {
       return;
     }
 
-    await addUser(username, password);
+    const response = await addUser(username.toLowerCase(), password);
+    if(response.error) {
+      notifyError(response.error);
+      navigation.navigate("Login" as never);
+      return;
+    };
+    
     notifySuccess("Account created successfully! You can now log in.");
     navigation.navigate("Login" as never);
   };

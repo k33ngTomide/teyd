@@ -17,8 +17,8 @@ export default function AddTaskScreen() {
   const navigation = useNavigation();
 
   const handleAdd = async () => {
-    if (!title.trim()) {
-      alert("Task title is required!");
+    if (!title.trim() || !dueDate) {
+      notifyError("Task title and Due date are required!");
       return;
     }
     const username = await getLoggedInUser();

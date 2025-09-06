@@ -1,7 +1,6 @@
 # TEYD App (Expo + React Native + TypeScript)
 
-
-A simple **To-Do List mobile application** built with **React Native** and **Expo**.
+A simple **To-Do List mobile application** built with **React Native**, **TypeScript** and **Expo**.
 The app allows users to register/login, manage tasks, and persist data locally using `AsyncStorage`.
 ---
 
@@ -123,7 +122,7 @@ On the Add Task screen:
 ---
 Download app link:
 Development Build Download
-  Android Build: https://expo.dev/accounts/akintomide/projects/teyd/builds/28fb5709-682c-45f2-8c86-c30aa5d3465f
+  Android Build: https://expo.dev/accounts/akintomide/projects/teyd/builds/3912c0a8-7044-4bbe-a110-2bbbb932e101
 
 👤 Author
 Sodiq Akintomide Muiliyu

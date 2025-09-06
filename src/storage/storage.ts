@@ -8,7 +8,7 @@ export type User = {
 };
 
 // Key constants
-const USERS_KEY = "users"; // list of all registered users
+const USERS_KEY = "users";
 const LOGGED_IN_KEY = "logged_user";
 
 // Hash password
@@ -29,10 +29,10 @@ export const getUsers = async (): Promise<User[]> => {
 export const addUser = async (
   username: string,
   password: string
-): Promise<boolean> => {
+): Promise<any> => {
   const users = await getUsers();
   const exists = users.some((u) => u.username === username);
-  if (exists) return false;
+  if (exists) return { error: "Username already exists, login instead" };
 
   const passwordHash = await hashPassword(password);
   const newUser: User = { username, passwordHash };
