@@ -42,7 +42,8 @@ export default function SignupScreen() {
   return (
     <KeyboardAvoidingView
       style={tw`flex-1 bg-[#121212]`}
-      behavior={Platform.OS === "ios" ? "padding" : undefined}
+      behavior={Platform.OS === "ios" ? "padding" : "padding"}
+      keyboardVerticalOffset={Platform.OS === "ios" ? 0 : 20}
     >
       <ScrollView
         contentContainerStyle={tw`flex-grow justify-center p-5`}

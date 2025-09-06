@@ -8,6 +8,7 @@ import {
   KeyboardAvoidingView,
   Platform,
   ScrollView,
+  SafeAreaView,
 } from "react-native";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import tw from "twrnc";
@@ -51,9 +52,11 @@ export default function LoginScreen() {
   };
 
   return (
+    <SafeAreaView style={tw`flex-1 bg-[#121212]`}>
     <KeyboardAvoidingView
       style={tw`flex-1 bg-[#121212]`}
-      behavior={Platform.OS === "ios" ? "padding" : undefined}
+      behavior={Platform.OS === "ios" ? "padding" : 'padding'}
+      keyboardVerticalOffset={Platform.OS === "ios" ? 0 : 20}
     >
       <ScrollView
         contentContainerStyle={tw`flex-grow justify-center p-5`}
@@ -125,5 +128,6 @@ export default function LoginScreen() {
         </View>
       </ScrollView>
     </KeyboardAvoidingView>
+    </SafeAreaView>
   );
 }

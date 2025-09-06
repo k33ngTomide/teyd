@@ -8,6 +8,7 @@ import LoginScreen from "../screens/login";
 import SignupScreen from "../screens/signup";
 import AddTaskScreen from "../screens/add-task-screen";
 import TaskListScreen from "../screens/task-list";
+import ViewAllTasksScreen from "../screens/all-tasks";
 
 export type RootStackParamList = {
   Splash: undefined;
@@ -15,6 +16,7 @@ export type RootStackParamList = {
   Signup: undefined;
   TaskList: undefined;
   AddTask: undefined;
+  AllTasks: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -45,6 +47,7 @@ export default function AppNavigator() {
         <Stack.Screen name="Signup" component={SignupScreen} />
         <Stack.Screen name="TaskList" component={TaskListScreen} />
         <Stack.Screen name="AddTask" component={AddTaskScreen} />
+        <Stack.Screen name="AllTasks" component={ViewAllTasksScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

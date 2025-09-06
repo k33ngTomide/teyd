@@ -1,20 +1,11 @@
-# To-Do List App (Expo + TypeScript)
+# TEYD App (Expo + React Native + TypeScript)
 
-Run locally:
-1. `npm install`
-2. `npx expo start`
-3. Open Expo Go (v53) on your device and scan the QR code
 
-# 📝 To-Do List App (React Native)
-
-A simple **To-Do List mobile application** built with **React Native** and **Expo**.  
-The app allows users to register/login, manage tasks, and persist data locally using `AsyncStorage`.  
-
-This project was developed as part of a **developer exercise**, showcasing task management, local storage, navigation, and clean UI/UX with **dark theme styling**.
-
+A simple **To-Do List mobile application** built with **React Native** and **Expo**.
+The app allows users to register/login, manage tasks, and persist data locally using `AsyncStorage`.
 ---
 
-## 🚀 Features
+## Features
 
 ### 🔑 Authentication
 - User registration and login
@@ -55,7 +46,6 @@ This project was developed as part of a **developer exercise**, showcasing task 
 
 ## 📂 Project Structure
 
-.
 ├── src
 │ ├── components
 │ │ └── AppNavigator.tsx # Navigation setup
@@ -63,7 +53,8 @@ This project was developed as part of a **developer exercise**, showcasing task 
 │ │ ├── login.tsx # User login
 │ │ ├── sign.tsx # User registration
 │ │ ├── task-list.tsx # View, toggle, delete, and filter tasks
-│ │ └── add-task-screen.tsx # Add new task with title, description, and due date
+│ │ ├── add-task-screen.tsx # Add new task with title, description, and due date
+│ │ └── all-tasks.tsx # view all task with title
 │ ├── storage
 │ │ └── storage.ts # AsyncStorage helpers (users, tasks, session)
 │ └── utils
@@ -93,9 +84,10 @@ This project was developed as part of a **developer exercise**, showcasing task 
    ```bash
    git clone https://github.com/k33ngtomide/teyd.git
    cd teyd
-Install dependencies
-
-
+  Install dependencies
+    1. `npm install`
+    2. `npx expo start`
+    3. Open Expo Go (v53) on your device and scan the QR code
 
 
 🧑‍💻 Usage
@@ -118,11 +110,25 @@ On the Add Task screen:
   Toast notifications for feedback
   Secure password storage (SHA-256 hashing)
 
+## 📸 Screenshots
+
+### 🔐 Authentication  
+
+| ![Splash](./assets/screenshots/splash.jpeg) | ![Login](./assets/screenshots/login.jpeg) | ![Signup](./assets/screenshots/signup.jpeg) |
+
+### ✅ Tasks  
+
+![Task List](./assets/screenshots/dashboard.jpeg) | ![Add Task](./assets/screenshots/addTask.jpeg) | ![View All](./assets/screenshots/alltask.jpeg) |
+
+---
+Download app link:
+Development Build Download
+  Android Build: https://expo.dev/accounts/akintomide/projects/teyd/builds/28fb5709-682c-45f2-8c86-c30aa5d3465f
 
 👤 Author
 Sodiq Akintomide Muiliyu
 📧 msodiqakintomide@gmail.com
-github/k33ngtomide
+👤 github/k33ngtomide
 
 
 

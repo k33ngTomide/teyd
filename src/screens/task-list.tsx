@@ -118,10 +118,28 @@ export default function TaskListScreen() {
       />
 
       <View style={tw`flex-1 p-4`}>
-        <Text style={tw`text-2xl font-bold text-white mb-4`}>
-          Tasks for {new Date(selectedDate).toDateString()}
-        </Text>
 
+        <View style={tw`items-center mb-2 flex-row rounded-lg px-2 py-2 mb-2`}>
+          <Text style={tw`text-2xl font-bold text-white mr-8`}>
+            {new Date(selectedDate).toDateString()}
+          </Text>
+
+          <TouchableOpacity
+            style={tw`bg-blue-600 bg-opacity-20 rounded-full ml-6 px-3 py-1`}
+            onPress={() => navigation.navigate("AllTasks" as never)}
+          >
+            <Ionicons name="chevron-forward" size={24} color="white" />
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            style={tw`bg-blue-600 bg-opacity-20 rounded-full ml-4 px-3 py-1`}
+            onPress={() => navigation.navigate("AddTask" as never)}
+          >
+            <Ionicons name="add" size={24} color="white" />
+          </TouchableOpacity>
+
+        </View>
+        
         {filteredTasks.length === 0 ? (
           <Text style={tw`text-gray-400`}>No tasks for this day.</Text>
         ) : (
@@ -173,12 +191,6 @@ export default function TaskListScreen() {
         )}
       </View>
 
-      <TouchableOpacity
-        style={tw`absolute bottom-15 right-7 bg-blue-600 bg-opacity-20 rounded-full p-4`}
-        onPress={() => navigation.navigate("AddTask" as never)}
-      >
-        <Text style={tw`text-white text-xl`}>  +  </Text>
-      </TouchableOpacity>
     </SafeAreaView>
   );
 }
