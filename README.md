@@ -122,7 +122,7 @@ On the Add Task screen:
 ---
 Download app link:
 Development Build Download
-  Android Build: https://expo.dev/accounts/akintomide/projects/teyd/builds/3912c0a8-7044-4bbe-a110-2bbbb932e101
+  Android Build: https://expo.dev/accounts/akintomide/projects/teyd/builds/f171a54d-e99c-41c1-b35e-a50454a71e14
 
 👤 Author
 Sodiq Akintomide Muiliyu
