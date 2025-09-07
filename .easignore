@@ -1,0 +1,28 @@
+# dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+
+# build outputs
+.expo
+dist
+build
+web-build
+
+# caches
+.expo-shared
+.cache
+
+# environment
+.env
+.env.local
+.env.development
+.env.production
+
+# IDE/editor stuff
+.vscode
+.idea
+.DS_Store
+
+# OS
+Thumbs.db
