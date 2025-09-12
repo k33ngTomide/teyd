@@ -113,16 +113,16 @@ On the Add Task screen:
 
 ### 🔐 Authentication  
 
-| ![Splash](./assets/screenshots/splash.jpeg) | ![Login](./assets/screenshots/login.jpeg) | ![Signup](./assets/screenshots/signup.jpeg) |
+| <img src="./assets/screenshots/splash.jpeg" alt="Splash" width="250" height="500"/> | <img src="./assets/screenshots/login.jpeg" alt="Login" width="250" height="500"/> | <img src="./assets/screenshots/signup.jpeg" alt="Signup" width="250" height="500"/> |
 
 ### ✅ Tasks  
 
-![Task List](./assets/screenshots/dashboard.jpeg) | ![Add Task](./assets/screenshots/addTask.jpeg) | ![View All](./assets/screenshots/alltask.jpeg) |
+| <img src="./assets/screenshots/dashboard.jpeg" alt="Task List" width="250" height="500"/> | <img src="./assets/screenshots/addTask.jpeg" alt="Add Task" width="250" height="500"/> | <img src="./assets/screenshots/alltask.jpeg" alt="View All" width="250" height="500"/> |
 
 ---
 Download app link:
 Development Build Download
-  Android Build: https://expo.dev/accounts/akintomide/projects/teyd/builds/5017f457-60d2-4956-b9b3-03577dc0d891
+  Android Build: https://expo.dev/accounts/akintomide/projects/teyd/builds/28fb5709-682c-45f2-8c86-c30aa5d3465f
 
 👤 Author
 Sodiq Akintomide Muiliyu
